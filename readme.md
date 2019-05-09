@@ -1,10 +1,7 @@
-# TN Plugin
+# Booking Plugin
 
-Full list of sections and features
+1. composer install
+2. npm install
+3. gulp watch
 
-* Modular Administration Area
-* CPT Manager
-* Custom template section
-* Ajax based Register on course system
-* Participants area
-* Custom course button for all Wysiwygs
+Good luck!
