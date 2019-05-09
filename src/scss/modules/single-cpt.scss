@@ -1,0 +1,125 @@
+.post-type-tn .rwmb-settings-no-boxes .rwmb-label {
+  max-width: 240px;
+}
+
+.post-type-tn input[type=text] {
+  min-width: 300px;
+}
+
+/* tn Settings Page */
+
+.sbp-extra-tip {
+  display: block;
+  margin-top: 10px;
+}
+
+/* Admin tn Form */
+
+.sbp-admin-form .sbp-field {
+  margin-bottom: 20px;
+}
+
+.sbp-admin-form .sbp-field:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.sbp-admin-form .sbp-label,
+.sbp-admin-form .sbp-input {
+  float: left;
+  vertical-align: top;
+}
+
+.sbp-admin-form .sbp-label {
+  width: 22%;
+  font-weight: bold;
+}
+
+.sbp-admin-form .sbp-input {
+  width: 78%;
+}
+
+/* tn Form field description */
+
+.sbp-admin-form .sbp-desc {
+  font-style: italic;
+  color: #555;
+  line-height: 1.4em;
+  margin: 4px 0 6px;
+}
+
+/* tn Form Fields */
+
+/* Heading */
+
+.sbp-field-heading h3 {
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.sbp-field.required-field .sbp-label > label:after {
+  content: "*";
+  color: #dc3232;
+  margin-left: 3px;
+}
+
+/* Textarea */
+
+.sbp-field-textarea textarea {
+  width: 96%;
+}
+
+/* Checkbox */
+
+.sbp-field-checkbox .sbp-desc {
+  display: inline;
+}
+
+/* Radio */
+
+.sbp-radio-group label {
+  display: block;
+  line-height: 1.4em;
+  margin: 4px 0 10px;
+}
+
+/* Select */
+
+.sbp-admin-form select {
+  min-width: 260px;
+}
+
+.sbp-admin-form h2:not(.nav-tab-wrapper) {
+  display:none;
+}
+
+.sbp-admin-form .sbp-error {
+  color: #dc3232;
+}
+
+.sbp-admin-form .has-errors input[type="text"],
+.sbp-admin-form .has-errors textarea {
+  border-color: #dc3232;
+}
+
+/* tn add shortcode button and popup styling */
+
+#sbp-popup-window .mce-container h5 {
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+#sbp-popup-window .mce-container p {
+  margin-bottom: 15px;
+}
+
+#sbp-popup-window .button {
+  text-decoration: none;
+}
+
+#sbp-popup-window p {
+  white-space : normal;
+  line-height: 1.3em;
+}

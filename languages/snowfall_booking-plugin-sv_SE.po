@@ -1,0 +1,729 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Snowfall Booking Plugin\n"
+"POT-Creation-Date: 2019-05-08 16:50+0300\n"
+"PO-Revision-Date: 2019-05-08 16:50+0300\n"
+"Last-Translator: \n"
+"Language-Team: Serhii Nosenko <nosenko2610@gmail.com>\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;"
+"_nx_noop:1,2,3c;esc_attr__;esc_attr_e;esc_html__;esc_html_e\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: node_modules\n"
+"X-Poedit-SearchPathExcluded-1: css\n"
+
+#: inc/Api/Callbacks/AddonCallbacks.php:13
+msgid "Create as many Add-ons as you want."
+msgstr "Skapa så många tillägg som du vill."
+
+#: inc/Api/Callbacks/ManagerCallbacks.php:58
+msgid "Invalid email format: "
+msgstr "Ogiltigt e-postformat:"
+
+#: inc/Api/Callbacks/ManagerCallbacks.php:90
+msgid "Set up rent price for each date."
+msgstr "Ställ in hyran för varje datum."
+
+#: inc/Api/Callbacks/ManagerCallbacks.php:95
+msgid "All info from booking flow should be send to:"
+msgstr "All information från bokningsflödet ska skickas till:"
+
+#: inc/Api/Callbacks/ManagerCallbacks.php:100
+msgid "Manage the Mail of this Plugin by fill fields from the following list."
+msgstr ""
+"Hantera posten i det här plugin-programmet genom att fylla i fält från "
+"följande lista."
+
+#: inc/Api/Callbacks/ManagerCallbacks.php:121
+msgid "Admin Email"
+msgstr "Admin E-post"
+
+#: inc/Api/Callbacks/ManagerCallbacks.php:135
+#: inc/Api/Callbacks/ManagerCallbacks.php:138
+#: inc/Api/Callbacks/ManagerCallbacks.php:140
+msgid "Remove"
+msgstr "Ta bort"
+
+#: inc/Api/Callbacks/ManagerCallbacks.php:141
+msgid "Add Email"
+msgstr "Lägg till e-post"
+
+#: inc/Api/Callbacks/ManagerCallbacks.php:153
+#: inc/Base/BookingListController.php:270 inc/Base/ShortcodeController.php:92
+msgid "EXCL."
+msgstr "EXKL."
+
+#: inc/Api/Callbacks/ManagerCallbacks.php:158
+#: inc/Base/BookingListController.php:275 inc/Base/ShortcodeController.php:97
+msgid "INCL."
+msgstr "INKL."
+
+#: inc/Api/Callbacks/ManagerCallbacks.php:185
+msgid "Default"
+msgstr "Standard"
+
+#: inc/Api/Callbacks/ManagerCallbacks.php:190
+msgid "Default leads on Front Page of your site."
+msgstr "Standardledningar på framsidan på din webbplats."
+
+#: inc/Api/Callbacks/ManagerCallbacks.php:207
+msgid "Select Image"
+msgstr "Välj bild"
+
+#: inc/Api/Callbacks/ManagerCallbacks.php:208
+msgid "Image should have resolution 440x94px."
+msgstr "Bilden ska ha en upplösning på 440x94px."
+
+#: inc/Base/AddonController.php:107 inc/Base/AddonController.php:108
+msgid "Settings panel"
+msgstr "Inställningspanelen"
+
+#: inc/Base/AddonController.php:144
+msgid "Add-on Manager"
+msgstr "Add-on Manager"
+
+#: inc/Base/AddonController.php:150
+msgid "All info is send to"
+msgstr "All information skickas till"
+
+#: inc/Base/AddonController.php:156
+msgid "Mail Manager"
+msgstr "Mail Manager"
+
+#: inc/Base/AddonController.php:170
+msgid "Add-on ID"
+msgstr "Tilläggs-ID"
+
+#: inc/Base/AddonController.php:183 templates/addons.php:28
+#: templates/contact-form.php:59
+msgid "Name"
+msgstr "Namn"
+
+#: inc/Base/AddonController.php:195 inc/Base/BookingListController.php:405
+#: templates/addons.php:28 templates/contact-form-front-end.php:131
+#: templates/contact-form-front-end.php:204 templates/contact-form.php:148
+msgid "Price"
+msgstr "Pris"
+
+#: inc/Base/AddonController.php:207 inc/Base/BaseController.php:56
+#: inc/Base/BookingListController.php:341 templates/addons.php:28
+#: templates/contact-form.php:100
+msgid "Corporate"
+msgstr "Företags"
+
+#: inc/Base/AddonController.php:219 inc/Base/BaseController.php:60
+#: inc/Base/BookingListController.php:340 templates/addons.php:28
+#: templates/contact-form.php:99
+msgid "Private"
+msgstr "Privat"
+
+#: inc/Base/AddonController.php:231 inc/Base/MailController.php:94
+#: inc/Base/PDFController.php:85 templates/addons.php:34
+msgid "Per Guest"
+msgstr "Per gäst"
+
+#: inc/Base/AddonController.php:243
+msgid "Short Information :"
+msgstr "Kort information:"
+
+#: inc/Base/AddonController.php:255
+msgid "Order :"
+msgstr "Ordning :"
+
+#: inc/Base/AddonController.php:270
+msgid "Emails"
+msgstr "E-post"
+
+#: inc/Base/AddonController.php:278 inc/Base/BookingListController.php:317
+#: templates/contact-form-front-end.php:39 templates/contact-form.php:74
+msgid "Email"
+msgstr "E-post"
+
+#: inc/Base/AddonController.php:283
+msgid "VAT"
+msgstr "MOMS"
+
+#: inc/Base/AddonController.php:291
+msgid "12"
+msgstr "12"
+
+#: inc/Base/AddonController.php:292
+msgid "%"
+msgstr "%"
+
+#: inc/Base/AddonController.php:298
+msgid "Text Box Under Calendar :"
+msgstr "Textrutan Under Kalender:"
+
+#: inc/Base/AddonController.php:312
+msgid "From:"
+msgstr "Från:"
+
+#: inc/Base/AddonController.php:320 inc/Base/MailController.php:145
+msgid "Ulvhäll"
+msgstr "Ulvhäll"
+
+#: inc/Base/AddonController.php:326
+msgid "Subject:"
+msgstr "Ämne:"
+
+#: inc/Base/AddonController.php:334 inc/Base/MailController.php:285
+msgid "Ulvhäll Booking, Date"
+msgstr "Ulvhäll Bokning, Datum"
+
+#: inc/Base/AddonController.php:339
+msgid "Email Logo:"
+msgstr "Email Logo:"
+
+#: inc/Base/AddonController.php:351
+msgid "Email Introductory Text :"
+msgstr "E-post Inledande Text:"
+
+#: inc/Base/BaseController.php:82 inc/Base/BaseController.php:99
+#: inc/Base/BookingListController.php:285 inc/Base/ShortcodeController.php:87
+#: templates/contact-form.php:20
+msgid "Booked"
+msgstr "Bokade"
+
+#: inc/Base/BaseController.php:86 inc/Base/BaseController.php:103
+#: inc/Base/BookingListController.php:287 inc/Base/ShortcodeController.php:88
+#: templates/contact-form.php:23
+msgid "Pre-booked"
+msgstr "Förbokade"
+
+#: inc/Base/BaseController.php:90 inc/Base/BaseController.php:107
+#: inc/Base/BookingListController.php:290 inc/Base/ShortcodeController.php:89
+#: templates/contact-form.php:25
+msgid "Blocked"
+msgstr "Blockerad"
+
+#: inc/Base/BaseController.php:116 inc/Base/BookingListController.php:415
+#: templates/contact-form.php:155
+msgid "Not paid"
+msgstr "Inte betalad"
+
+#: inc/Base/BaseController.php:120 inc/Base/BookingListController.php:417
+#: inc/Base/BookingListController.php:643 templates/contact-form.php:158
+msgid "Paid"
+msgstr "Betald"
+
+#: inc/Base/BookingListController.php:136
+#: inc/Base/BookingListController.php:137 templates/member-download.php:18
+msgid "Download"
+msgstr "Ladda ner"
+
+#: inc/Base/BookingListController.php:148
+#: inc/Base/BookingListController.php:149 templates/price_calendar.php:10
+msgid "Booking List"
+msgstr "Bokningslista"
+
+#: inc/Base/BookingListController.php:178 templates/price_calendar.php:3
+msgid "+ New Booking"
+msgstr "+ Ny bokning"
+
+#: inc/Base/BookingListController.php:200
+msgid "Booking Information"
+msgstr "Bokningsinformation"
+
+#: inc/Base/BookingListController.php:256 inc/Pages/Dashboard.php:88
+msgid "Calendar"
+msgstr "Kalender"
+
+#: inc/Base/BookingListController.php:265 templates/contact-form.php:37
+msgid "Selected dates should be with price"
+msgstr "Valda datum bör vara med pris"
+
+#: inc/Base/BookingListController.php:267
+#: templates/contact-form-front-end.php:292 templates/contact-form.php:39
+msgid "Selected dates are booked!"
+msgstr "Valda datum är bokade!"
+
+#: inc/Base/BookingListController.php:282
+#: inc/Base/BookingListController.php:412
+#: inc/Base/BookingListController.php:498 templates/contact-form.php:153
+msgid "Status"
+msgstr "Status"
+
+#: inc/Base/BookingListController.php:300
+#: templates/contact-form-front-end.php:23
+msgid "First Name"
+msgstr "Förnamn"
+
+#: inc/Base/BookingListController.php:309
+msgid "Last Name"
+msgstr "Efternamn"
+
+#: inc/Base/BookingListController.php:325
+#: templates/contact-form-front-end.php:47 templates/contact-form.php:81
+msgid "Phone number"
+msgstr "Telefonnummer"
+
+#: inc/Base/BookingListController.php:338
+#: inc/Base/BookingListController.php:497
+msgid "Booking type"
+msgstr "Bokningstyp"
+
+#: inc/Base/BookingListController.php:348
+#: templates/contact-form-front-end.php:15 templates/contact-form.php:104
+#: templates/contact-form.php:106
+msgid "Amount of the guests"
+msgstr "Antal gäster"
+
+#: inc/Base/BookingListController.php:361
+#: inc/Base/BookingListController.php:499
+msgid "Add-ons"
+msgstr "Tillägga"
+
+#: inc/Base/BookingListController.php:496
+msgid "Booking Date"
+msgstr "Bokningsdatum"
+
+#: inc/Base/BookingListController.php:500
+msgid "Total estimated price"
+msgstr "Totalt beräknat pris"
+
+#: inc/Base/BookingListController.php:648
+msgid "Not Paid"
+msgstr "Inte betalad"
+
+#: inc/Base/BookingListController.php:653
+msgid "All"
+msgstr "Allt"
+
+#: inc/Base/BookingListController.php:659
+msgid "Future"
+msgstr "Framtida"
+
+#: inc/Base/BookingListController.php:664
+#: inc/Base/BookingListController.php:714
+msgid "Past"
+msgstr "Dåtid"
+
+#: inc/Base/BookingListController.php:669
+msgid "Trash"
+msgstr "Skräp"
+
+#: inc/Base/BookingListController.php:674
+msgid "Pre-Booked"
+msgstr "Reserveras "
+
+#: inc/Base/Enqueue.php:75 templates/contact-form-front-end.php:226
+msgid "Cancel"
+msgstr "Avbryt"
+
+#: inc/Base/Enqueue.php:76 templates/contact-form-front-end.php:55
+#: templates/contact-form-front-end.php:138
+msgid "Get a price estimate"
+msgstr "Få en prisuppskattning"
+
+#: inc/Base/MailController.php:96 inc/Base/PDFController.php:87
+msgid "guests"
+msgstr "gäster"
+
+#: inc/Base/MailController.php:96 inc/Base/PDFController.php:87
+msgid "guest"
+msgstr "gäst"
+
+#: inc/Base/MailController.php:97 inc/Base/MailController.php:103
+#: inc/Base/PDFController.php:88 inc/Base/PDFController.php:94
+msgid "days"
+msgstr "dagar"
+
+#: inc/Base/MailController.php:97 inc/Base/MailController.php:103
+#: inc/Base/PDFController.php:88 inc/Base/PDFController.php:94
+msgid "day"
+msgstr "dag"
+
+#: inc/Base/MailController.php:98 inc/Base/MailController.php:104
+#: inc/Base/MailController.php:233 inc/Base/MailController.php:262
+#: inc/Base/PDFController.php:89 inc/Base/PDFController.php:95
+#: inc/Base/PDFController.php:217 inc/Base/PDFController.php:247
+msgid " SEK"
+msgstr " SEK"
+
+#: inc/Base/MailController.php:101 inc/Base/PDFController.php:92
+msgid "Fixed Price"
+msgstr "Fast Pris"
+
+#: inc/Base/MailController.php:191 inc/Base/PDFController.php:174
+msgid "Email: "
+msgstr "E-post: "
+
+#: inc/Base/MailController.php:200 inc/Base/PDFController.php:183
+msgid "Phone: "
+msgstr "Telefon: "
+
+#: inc/Base/MailController.php:209 inc/Base/PDFController.php:192
+msgid "Booking Type: "
+msgstr "Bokningstyp: "
+
+#: inc/Base/MailController.php:218 inc/Base/PDFController.php:201
+msgid "Amount of the guests: "
+msgstr "Antal gäster: "
+
+#: inc/Base/MailController.php:227 inc/Base/PDFController.php:210
+msgid "Selected Dates: "
+msgstr "Valda datum: "
+
+#: inc/Base/MailController.php:227 inc/Base/PDFController.php:210
+msgid "Price Per Day (EXCL. VAT)"
+msgstr "Pris per dag (exkl. Moms)"
+
+#: inc/Base/MailController.php:242 inc/Base/PDFController.php:227
+msgid "Add-ons: "
+msgstr "Add-ons: "
+
+#: inc/Base/MailController.php:242 inc/Base/PDFController.php:227
+msgid "Price Per Day (EXCL. VAT) & Per Person"
+msgstr "Pris per dag (exkl. Moms) och per person"
+
+#: inc/Base/MailController.php:253 inc/Base/PDFController.php:238
+msgid " (INCL. VAT)"
+msgstr " (INKL. Moms)"
+
+#: inc/Base/MailController.php:255 inc/Base/PDFController.php:240
+msgid " (EXCL. VAT)"
+msgstr " (Exkl moms)"
+
+#: inc/Base/MailController.php:261 inc/Base/PDFController.php:246
+msgid "Total Price: "
+msgstr "Totalbelopp: "
+
+#: inc/Base/MailController.php:275 inc/Base/PDFController.php:260
+msgid "Check New Dates"
+msgstr "Kontrollera nya datum"
+
+#: inc/Base/PDFController.php:145
+msgid "Logo"
+msgstr "Logotyp"
+
+#: inc/Base/SettingsLinks.php:19
+msgid "Settings"
+msgstr "Inställningar"
+
+#: inc/Base/ShortcodeController.php:64 inc/Base/ShortcodeController.php:65
+#: templates/shortcode.php:2
+msgid "Shortcode"
+msgstr "Shortcode"
+
+#: inc/Base/ShortcodeController.php:81
+msgid "Need to select both start and stop date"
+msgstr "Behöver välja både start- och stoppdatum"
+
+#: inc/Base/ShortcodeController.php:83
+msgid "Clear selection"
+msgstr "Rensa urvalet"
+
+#: inc/Pages/Dashboard.php:36 templates/price_calendar.php:9
+msgid "Price Calendar"
+msgstr "Pris kalender"
+
+#: inc/Pages/Dashboard.php:43 templates/price_calendar.php:2
+msgid "Snowfall Booking Plugin"
+msgstr "Snowfall Booking Plugin"
+
+#: inc/Pages/Dashboard.php:44
+msgid "Snowfall Booking"
+msgstr "Snowfall Booking"
+
+#: inc/Pages/Dashboard.php:72
+msgid "Price Calendar Manager"
+msgstr "Pris Kalenderchef"
+
+#: inc/Pages/Dashboard.php:102
+msgid "Price (EXCL. VAT)"
+msgstr "Pris (exkl. Moms)"
+
+#: inc/Pages/Dashboard.php:110
+msgid "Price exclude VAT"
+msgstr "Pris exklusive moms"
+
+#: inc/Pages/Dashboard.php:111
+msgid "SEK"
+msgstr "SEK"
+
+#: templates/addons.php:2
+msgid "Settings Panel"
+msgstr "Inställningar Panel"
+
+#: templates/addons.php:7
+msgid "Your Add-ons"
+msgstr "Dina tillägg"
+
+#: templates/addons.php:10 templates/addons.php:41
+msgid "Edit"
+msgstr "Redigera"
+
+#: templates/addons.php:10
+msgid "Add"
+msgstr "Lägg till"
+
+#: templates/addons.php:10
+msgid " Add-on"
+msgstr " Tillägg"
+
+#: templates/addons.php:15
+msgid " Mail & PDF Settings"
+msgstr " Mail och PDF-inställningar"
+
+#: templates/addons.php:23
+msgid "Manage Your Add-ons"
+msgstr "Hantera dina tillägg"
+
+#: templates/addons.php:28
+msgid "Per Guest/Fixed"
+msgstr "Per Gäst / Fast"
+
+#: templates/addons.php:28
+msgid "Short Information"
+msgstr "Kort information"
+
+#: templates/addons.php:28
+msgid "Actions"
+msgstr "Åtgärder"
+
+#: templates/addons.php:32 templates/addons.php:33
+msgid "TRUE"
+msgstr "SANN"
+
+#: templates/addons.php:32 templates/addons.php:33
+msgid "FALSE"
+msgstr "FALSK"
+
+#: templates/addons.php:34
+msgid "Fixed"
+msgstr "Fast"
+
+#: templates/addons.php:47
+msgid "Delete"
+msgstr "Radera"
+
+#: templates/addons.php:48
+msgid ""
+"Are you sure you want to delete this Add-on? The data associated with it "
+"will not be deleted."
+msgstr ""
+"Är du säker på att du vill ta bort den här tillägget? Data som är "
+"associerade med det kommer inte att raderas."
+
+#: templates/addons.php:54
+msgid "The Add-ons order has been updated!"
+msgstr "Add-ons-ordern har uppdaterats!"
+
+#: templates/contact-form-front-end.php:2
+msgid "Your are interested in: "
+msgstr "Du är intresserad av: "
+
+#: templates/contact-form-front-end.php:8
+msgid "for Private event"
+msgstr "för Privat händelse"
+
+#: templates/contact-form-front-end.php:9
+msgid "for Corporate event"
+msgstr "för Företagsevenemang"
+
+#: templates/contact-form-front-end.php:18 templates/contact-form.php:109
+msgid "Amount of the guests is Required"
+msgstr "Antal gäster är obligatorisk"
+
+#: templates/contact-form-front-end.php:26 templates/contact-form.php:62
+msgid "Your Name is Required"
+msgstr "Ditt namn är obligatoriskt"
+
+#: templates/contact-form-front-end.php:31 templates/contact-form.php:67
+msgid "Surname"
+msgstr "Efternamn"
+
+#: templates/contact-form-front-end.php:34 templates/contact-form.php:70
+msgid "Your Surname is Required"
+msgstr "Ditt efternamn är obligatoriskt"
+
+#: templates/contact-form-front-end.php:42 templates/contact-form.php:77
+msgid "The Email address is not valid"
+msgstr "E-postadressen är inte giltig"
+
+#: templates/contact-form-front-end.php:50 templates/contact-form.php:84
+msgid "Your Phone Number is Required"
+msgstr "Ditt telefonnummer är obligatoriskt"
+
+#: templates/contact-form-front-end.php:72
+msgid "Choose Add-ons"
+msgstr "Välj tillägg"
+
+#: templates/contact-form-front-end.php:151
+msgid "Summary"
+msgstr "Sammanfattning"
+
+#: templates/contact-form-front-end.php:159
+msgid "Name:"
+msgstr "Namn:"
+
+#: templates/contact-form-front-end.php:165
+msgid "Email:"
+msgstr "E-post:"
+
+#: templates/contact-form-front-end.php:171
+msgid "Phone:"
+msgstr "Telefon:"
+
+#: templates/contact-form-front-end.php:177
+msgid "Booking Type:"
+msgstr "Bokningstyp:"
+
+#: templates/contact-form-front-end.php:183
+msgid "Amount of the guests:"
+msgstr "Antal gäster:"
+
+#: templates/contact-form-front-end.php:189
+msgid "Dates:"
+msgstr "Datum:"
+
+#: templates/contact-form-front-end.php:195
+msgid "Add-ons:"
+msgstr "Add-ons:"
+
+#: templates/contact-form-front-end.php:196
+msgid "Price Per Day & Per Person"
+msgstr "Pris per dag och per person"
+
+#: templates/contact-form-front-end.php:218
+msgid "See summary:"
+msgstr "Se sammanfattning:"
+
+#: templates/contact-form-front-end.php:220
+msgid "Send a summary by email"
+msgstr "Skicka sammanfattning till min epost"
+
+#: templates/contact-form-front-end.php:222
+msgid "Download a pdf of the summary"
+msgstr "Ladda ner sammanfattning som PDF"
+
+#: templates/contact-form-front-end.php:230
+msgid "Sent!</br>Check yourself mailbox, please!<br>Thanks!"
+msgstr "Skickat!<br>Kontrollera själv brevlåda, tack!<br> Tack!"
+
+#: templates/contact-form-front-end.php:232
+msgid "Sending in process, please wait"
+msgstr "Skickar iväg, vänta"
+
+#: templates/contact-form-front-end.php:234
+msgid "Estimate Successfully sent, thank you!"
+msgstr "Uppskattning skickad, tack!"
+
+#: templates/contact-form-front-end.php:236
+msgid ""
+"There was a problem with sending, please\n"
+"                            try again!"
+msgstr ""
+"Det var ett problem att skicka, tack\n"
+"                             försök igen!"
+
+#: templates/contact-form-front-end.php:258
+msgid "Choose a date please!"
+msgstr "Välj ett datum tack!"
+
+#: templates/contact-form-front-end.php:275
+msgid "Selected dates should be with price!"
+msgstr "Valda datum bör vara med pris!"
+
+#: templates/contact-form.php:6
+msgid "New Booking"
+msgstr "Ny bokning"
+
+#: templates/contact-form.php:18
+msgid "Status:"
+msgstr "Status:"
+
+#: templates/contact-form.php:32
+msgid "Check in date"
+msgstr "Inchecknings datum"
+
+#: templates/contact-form.php:43
+msgid "Check out date"
+msgstr "Kolla in datumet"
+
+#: templates/contact-form.php:48
+msgid "Check out date is Required"
+msgstr "Kolla in datumet är obligatoriskt"
+
+#: templates/contact-form.php:97
+msgid "Booking type:"
+msgstr "Bokningstyp:"
+
+#: templates/contact-form.php:169
+msgid "SAVE"
+msgstr "SPARA"
+
+#: templates/contact-form.php:175
+msgid "Submission in process, please wait"
+msgstr "Inlämning pågår, vänligen vänta"
+
+#: templates/contact-form.php:177
+msgid "Message Successfully submitted, thank you!"
+msgstr "Meddelande Framlagt, tack!"
+
+#: templates/contact-form.php:179
+msgid ""
+"There was a problem with saving, please\n"
+"                            try again!"
+msgstr ""
+"Det var ett problem att spara, tack\n"
+"                             försök igen!"
+
+#: templates/contact-form.php:194
+msgid "Booked!"
+msgstr "Bokad!"
+
+#: templates/member-download.php:3
+msgid "Download Report"
+msgstr "Hämta rapport"
+
+#: templates/member-download.php:4
+msgid "Export Booked People"
+msgstr "Exportera bokade personer"
+
+#: templates/member-download.php:7
+msgid ""
+"Download\n"
+"        Format"
+msgstr ""
+"Hämta\n"
+"        Format"
+
+#: templates/member-download.php:10
+msgid ""
+"Download\n"
+"        CSV"
+msgstr ""
+"Hämta\n"
+"        CSV"
+
+#: templates/member-download.php:12
+msgid ""
+"Download\n"
+"        Excel"
+msgstr ""
+"Hämta\n"
+"        Excel"
+
+#: templates/price_calendar.php:11
+msgid "Settings page"
+msgstr "Inställningar sida"
+
+#: templates/shortcode.php:7
+msgid ""
+"Copy this shortcode and paste anywhere you want to show calendar with form"
+msgstr ""
+"Kopiera denna kortnummer och klistra in var som helst du vill visa kalender "
+"med formulär"
+
+#~ msgid "<a href=\"%s\" %s>All <span class=\"count\">(%d)</span></a>"
+#~ msgstr "<a href=«%s» %s>Allt <span class=«count»>(%d)</span></a>"

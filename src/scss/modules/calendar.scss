@@ -1,0 +1,797 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800');
+
+@mixin ff() {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#wpbody-content #adminCalendar.flatpickr-input[readonly] {
+  display: none;
+}
+
+#adminCalendar + .flatpickr-calendar .flatpickr-current-month {
+  color: #737373;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  left: 0;
+  width: auto;
+}
+
+#adminCalendar + .flatpickr-calendar {
+  box-shadow: none;
+}
+
+@media only screen and(min-width: 500px) {
+  #wpbody-content #adminCalendar + .flatpickr-calendar {
+    width: 482px;
+  }
+
+  #wpbody-content #adminCalendar + .flatpickr-calendar .dayContainer {
+    width:100%;
+    min-width: 100%;
+    max-width: 100%;
+    justify-content: space-between;
+  }
+
+  #adminCalendar + .flatpickr-calendar .flatpickr-rContainer, #wpbody-content #adminCalendar + .flatpickr-calendar .flatpickr-days {
+    width:100% !important;
+  }
+}
+
+#adminCalendar {
+  border: none;
+}
+
+#adminCalendar + .flatpickr-calendar .flatpickr-months {
+  padding: 25px 18px 25px 23px;
+  border: 1px solid #dddddd;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+#adminCalendar + .flatpickr-calendar .flatpickr-months .flatpickr-prev-month, #adminCalendar + .flatpickr-calendar .flatpickr-months .flatpickr-next-month {
+  height: 27px;
+  width: 27px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 1px solid #c6c3c3;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  position: relative;
+}
+
+#adminCalendar + .flatpickr-calendar .flatpickr-months .flatpickr-prev-month.disabled, #adminCalendar + .flatpickr-calendar .flatpickr-months .flatpickr-next-month.disabled {
+  display: none;
+}
+
+#adminCalendar + .flatpickr-calendar .flatpickr-months .flatpickr-prev-month svg, #adminCalendar + .flatpickr-calendar .flatpickr-months .flatpickr-next-month svg {
+  fill: #c6c3c3;
+  width: 7px;
+  height: 10px;
+}
+
+#adminCalendar + .flatpickr-calendar .flatpickr-next-month {
+  order: 3;
+  margin-left: 15px;
+}
+
+#adminCalendar + .flatpickr-calendar .flatpickr-months .flatpickr-month {
+  order: 1;
+}
+
+#adminCalendar + .flatpickr-calendar .flatpickr-prev-month {
+  order: 2;
+}
+
+#adminCalendar + .flatpickr-calendar .flatpickr-innerContainer {
+  border-right: 1px solid #dddddd;
+  border-left: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding:23px 13px 23px 17px;
+}
+
+#adminCalendar + .flatpickr-calendar span.flatpickr-weekday {
+  padding: 5px;
+  text-align: left;
+  color: #d8ceb0;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  /* Text style for "TU" */
+  letter-spacing: -0.14px;
+  margin-bottom: 35px;
+}
+
+#adminCalendar + .flatpickr-calendar .flatpickr-weekdays {
+  height: auto;
+}
+
+#wpbody-content #adminCalendar + .flatpickr-calendar .flatpickr-day {
+  width: 56px;
+  max-width: 14%;
+  height: 36px;
+  line-height: 1;
+  border: 1px solid transparent;
+  text-align: left;
+  padding: 6px 5px;
+  margin: 0 0 23px;
+  color: #919191;
+  font-family: "Open Sans";
+  font-size: 11px;
+  font-weight: 600;
+  /* Text style for "6" */
+  letter-spacing: -0.11px;
+  transition: all .25s ease-in-out;
+  border-radius: 0;
+}
+
+#wpbody-content #adminCalendar + .flatpickr-calendar .flatpickr-day:hover {
+  background: transparent;
+  border: 1px solid #bf9958;
+  border-radius: 0;
+
+}
+
+#wpbody-content #adminCalendar + .flatpickr-calendar .flatpickr-day.selected{
+  background-color: #d4efd9 !important;
+
+}
+
+#wpbody-content #adminCalendar + .flatpickr-calendar .flatpickr-day.prevMonthDay.disabled, #wpbody-content #adminCalendar + .flatpickr-calendar .flatpickr-day.prevMonthDay.disabled:hover {
+  opacity: 0.3;
+  color: #919191;
+  font-family: "Open Sans";
+  font-size: 11px;
+  font-weight: 600;
+  /* Text style for "28" */
+  letter-spacing: -0.11px;
+}
+
+#wpbody-content #adminCalendar + .flatpickr-calendar .flatpickr-day.disabled, #wpbody-content #adminCalendar + .flatpickr-calendar .flatpickr-day.disabled:hover {
+  color: #919191;
+  font-family: "Open Sans";
+  font-size: 11px;
+  font-weight: 600;
+  /* Text style for "1" */
+  letter-spacing: -0.11px;
+}
+
+#wpbody-content #adminCalendar + .flatpickr-calendar .flatpickr-day.disabled.pre-booked, #wpbody-content #adminCalendar + .flatpickr-calendar .flatpickr-day.disabled.pre-booked:hover {
+  border-color: #fff1b9;
+  background-color: #fff1b9;
+}
+
+#wpbody-content #adminCalendar + .flatpickr-calendar .flatpickr-day.disabled.small-group, #wpbody-content #adminCalendar + .flatpickr-calendar .flatpickr-day.disabled.small-group:hover {
+  border-color: #d8f0dd;
+  background-color: #d8f0dd;
+}
+
+#wpbody-content #adminCalendar + .flatpickr-calendar .flatpickr-day.disabled.booked, #wpbody-content #adminCalendar + .flatpickr-calendar .flatpickr-day.disabled.booked:hover {
+  border-color: #ffe1b9;
+  background-color: #ffe1b9;
+}
+
+#wpbody-content #adminCalendar + .flatpickr-calendar .flatpickr-day.disabled.blocked, #wpbody-content #adminCalendar + .flatpickr-calendar .flatpickr-day.disabled.blocked:hover {
+  border-color: #fec1c1;
+  background-color: #fec1c1;
+}
+
+// For range calendar
+.flatpickr-calendar .flatpickr-day.disabled.pre-booked, .flatpickr-calendar .flatpickr-day.disabled.pre-booked:hover {
+  border-color: #fff1b9;
+  background-color: #fff1b9;
+}
+
+.flatpickr-calendar .flatpickr-day.disabled.small-group, .flatpickr-calendar .flatpickr-day.disabled.small-group:hover {
+  border-color: #d8f0dd;
+  background-color: #d8f0dd;
+}
+
+.flatpickr-calendar .flatpickr-day.disabled.booked, .flatpickr-calendar .flatpickr-day.disabled.booked:hover {
+  border-color: #ffe1b9;
+  background-color: #ffe1b9;
+}
+
+.flatpickr-calendar .flatpickr-day.disabled.blocked, .flatpickr-calendar .flatpickr-day.disabled.blocked:hover {
+  border-color: #fec1c1;
+  background-color: #fec1c1;
+}
+
+// For CPT fileds
+.blocked {
+  color: #fd3333;
+}
+
+.pre-booked {
+  color: #ffd117;
+}
+
+.small_group {
+  color: #3bb654;
+}
+
+.booked {
+  color: #ff9a17;
+}
+
+
+#wpbody-content #adminCalendar + .flatpickr-calendar .flatpickr-day .price {
+  color: #3a3a3a;
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1;
+  /* Text style for "32 900 :-" */
+  letter-spacing: -0.36px;
+  display: block;
+}
+
+#wpbody-content #adminCalendar + .flatpickr-calendar .flatpickr-day.min-price .price {
+  font-weight: 900;
+}
+
+#wpbody-content #adminCalendar + .flatpickr-calendar .flatpickr-day.today {
+  border: 1px solid #bf9958 !important;
+  background-color: transparent;
+  border-radius: 0;
+  font-weight:700;
+}
+
+#picker-container .flatpickr-calendar {
+  top: 60px !important;
+  left: 0 !important;
+}
+
+
+// For single page
+
+#wpbody-content #sbp_booking_list_calendar.flatpickr-input[readonly] {
+  display: none;
+}
+
+#sbp_booking_list_calendar + .flatpickr-calendar .flatpickr-current-month {
+  color: #737373;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  left: 0;
+  width: auto;
+}
+
+#sbp_booking_list_calendar + .flatpickr-calendar {
+  box-shadow: none;
+}
+
+@media only screen and(min-width: 500px) {
+  #wpbody-content #sbp_booking_list_calendar + .flatpickr-calendar {
+    width: 482px;
+  }
+
+  #wpbody-content #sbp_booking_list_calendar + .flatpickr-calendar .dayContainer {
+    width:100%;
+    min-width: 100%;
+    max-width: 100%;
+    justify-content: space-between;
+  }
+
+  #sbp_booking_list_calendar + .flatpickr-calendar .flatpickr-rContainer, #wpbody-content #sbp_booking_list_calendar + .flatpickr-calendar .flatpickr-days {
+    width:100% !important;
+  }
+}
+
+#sbp_booking_list_calendar {
+  border: none;
+}
+
+#sbp_booking_list_calendar + .flatpickr-calendar .flatpickr-months {
+  padding: 25px 18px 25px 23px;
+  border: 1px solid #dddddd;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+#sbp_booking_list_calendar + .flatpickr-calendar .flatpickr-months .flatpickr-prev-month, #sbp_booking_list_calendar + .flatpickr-calendar .flatpickr-months .flatpickr-next-month {
+  height: 27px;
+  width: 27px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 1px solid #c6c3c3;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  position: relative;
+}
+
+#sbp_booking_list_calendar + .flatpickr-calendar .flatpickr-months .flatpickr-prev-month.disabled, #sbp_booking_list_calendar + .flatpickr-calendar .flatpickr-months .flatpickr-next-month.disabled {
+  display: none;
+}
+
+#sbp_booking_list_calendar + .flatpickr-calendar .flatpickr-months .flatpickr-prev-month svg, #sbp_booking_list_calendar + .flatpickr-calendar .flatpickr-months .flatpickr-next-month svg {
+  fill: #c6c3c3;
+  width: 7px;
+  height: 10px;
+}
+
+#sbp_booking_list_calendar + .flatpickr-calendar .flatpickr-next-month {
+  order: 3;
+  margin-left: 15px;
+}
+
+#sbp_booking_list_calendar + .flatpickr-calendar .flatpickr-months .flatpickr-month {
+  order: 1;
+}
+
+#sbp_booking_list_calendar + .flatpickr-calendar .flatpickr-prev-month {
+  order: 2;
+}
+
+#sbp_booking_list_calendar + .flatpickr-calendar .flatpickr-innerContainer {
+  border-right: 1px solid #dddddd;
+  border-left: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding:23px 13px 23px 17px;
+}
+
+#sbp_booking_list_calendar + .flatpickr-calendar span.flatpickr-weekday {
+  padding: 5px;
+  text-align: left;
+  color: #d8ceb0;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  /* Text style for "TU" */
+  letter-spacing: -0.14px;
+  margin-bottom: 35px;
+}
+
+#sbp_booking_list_calendar + .flatpickr-calendar .flatpickr-weekdays {
+  height: auto;
+}
+
+#wpbody-content #sbp_booking_list_calendar + .flatpickr-calendar .flatpickr-day {
+  width: 56px;
+  max-width: 14%;
+  height: 36px;
+  line-height: 1;
+  border: 1px solid transparent;
+  text-align: left;
+  padding: 6px 5px;
+  margin: 0 0 23px;
+  color: #919191;
+  font-family: "Open Sans";
+  font-size: 11px;
+  font-weight: 600;
+  /* Text style for "6" */
+  letter-spacing: -0.11px;
+  transition: all .25s ease-in-out;
+  border-radius: 0;
+}
+
+#wpbody-content #sbp_booking_list_calendar + .flatpickr-calendar .flatpickr-day:hover {
+  background: transparent;
+  border: 1px solid #bf9958;
+  border-radius: 0;
+
+}
+
+#wpbody-content #sbp_booking_list_calendar + .flatpickr-calendar .flatpickr-day.selected{
+  background-color: #569ff7 !important;
+  color: #fff !important;
+}
+
+#wpbody-content #sbp_booking_list_calendar + .flatpickr-calendar .flatpickr-day.prevMonthDay.disabled, #wpbody-content #sbp_booking_list_calendar + .flatpickr-calendar .flatpickr-day.prevMonthDay.disabled:hover {
+  opacity: 0.3;
+  color: #919191;
+  font-family: "Open Sans";
+  font-size: 11px;
+  font-weight: 600;
+  /* Text style for "28" */
+  letter-spacing: -0.11px;
+}
+
+#wpbody-content #sbp_booking_list_calendar + .flatpickr-calendar .flatpickr-day.disabled, #wpbody-content #sbp_booking_list_calendar + .flatpickr-calendar .flatpickr-day.disabled:hover {
+  color: #919191;
+  font-family: "Open Sans";
+  font-size: 11px;
+  font-weight: 600;
+  /* Text style for "1" */
+  letter-spacing: -0.11px;
+}
+
+#wpbody-content #sbp_booking_list_calendar + .flatpickr-calendar .flatpickr-day.disabled.pre-booked, #wpbody-content #sbp_booking_list_calendar + .flatpickr-calendar .flatpickr-day.disabled.pre-booked:hover {
+  border-color: #fff1b9;
+  background-color: #fff1b9;
+}
+
+#wpbody-content #sbp_booking_list_calendar + .flatpickr-calendar .flatpickr-day.disabled.small-group, #wpbody-content #sbp_booking_list_calendar + .flatpickr-calendar .flatpickr-day.disabled.small-group:hover {
+  border-color: #d8f0dd;
+  background-color: #d8f0dd;
+}
+
+#wpbody-content #sbp_booking_list_calendar + .flatpickr-calendar .flatpickr-day.disabled.booked, #wpbody-content #sbp_booking_list_calendar + .flatpickr-calendar .flatpickr-day.disabled.booked:hover {
+  border-color: #ffe1b9;
+  background-color: #ffe1b9;
+}
+
+#wpbody-content #sbp_booking_list_calendar + .flatpickr-calendar .flatpickr-day.disabled.blocked, #wpbody-content #sbp_booking_list_calendar + .flatpickr-calendar .flatpickr-day.disabled.blocked:hover {
+  border-color: #fec1c1;
+  background-color: #fec1c1;
+}
+
+// For range calendar
+.flatpickr-calendar .flatpickr-day.disabled.pre-booked, .flatpickr-calendar .flatpickr-day.disabled.pre-booked:hover {
+  border-color: #fff1b9;
+  background-color: #fff1b9;
+}
+
+.flatpickr-calendar .flatpickr-day.disabled.small-group, .flatpickr-calendar .flatpickr-day.disabled.small-group:hover {
+  border-color: #d8f0dd;
+  background-color: #d8f0dd;
+}
+
+.flatpickr-calendar .flatpickr-day.disabled.booked, .flatpickr-calendar .flatpickr-day.disabled.booked:hover {
+  border-color: #ffe1b9;
+  background-color: #ffe1b9;
+}
+
+.flatpickr-calendar .flatpickr-day.disabled.blocked, .flatpickr-calendar .flatpickr-day.disabled.blocked:hover {
+  border-color: #fec1c1;
+  background-color: #fec1c1;
+}
+
+// For CPT fileds
+.blocked {
+  color: #fd3333;
+}
+
+.pre-booked {
+  color: #ffd117;
+}
+
+.small_group {
+  color: #3bb654;
+}
+
+.booked {
+  color: #ff9a17;
+}
+
+
+#wpbody-content #sbp_booking_list_calendar + .flatpickr-calendar .flatpickr-day .price {
+  color: #3a3a3a;
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1;
+  /* Text style for "32 900 :-" */
+  letter-spacing: -0.36px;
+  display: block;
+}
+
+#wpbody-content #sbp_booking_list_calendar + .flatpickr-calendar .flatpickr-day.min-price .price {
+  font-weight: 900;
+}
+
+#wpbody-content #sbp_booking_list_calendar + .flatpickr-calendar .flatpickr-day.today {
+  border: 1px solid #bf9958 !important;
+  background-color: transparent;
+  border-radius: 0;
+  font-weight:700;
+}
+
+#picker-container .flatpickr-calendar {
+  top: 60px !important;
+  left: 0 !important;
+}
+
+.error {
+  color: rgb(144, 19, 19) !important;
+}
+
+.success {
+  color: rgb(47, 129, 47);
+}
+
+.small-text {
+  margin: 0 0 5px;
+  font-size: 11px !important;
+  h1, h2, h3, h4, h5, h6, p, blockquote {
+    margin: 0 0 5px;
+    font-size: 11px !important;
+  }
+
+  ul, ol {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 5px;
+    list-style: initial;
+    padding-left: 20px;
+  }
+
+  ol li, ul li {
+    margin: 0;
+    font-size: 11px;
+  }
+  img {
+    display: none;
+  }
+}
+
+.cpt-table {
+  ul, ol {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 5px;
+    list-style: initial;
+    padding-left: 20px;
+  }
+}
+
+@mixin can-toggle-branding(
+  $can-toggle-off-color: #777,
+  $can-toggle-on-color: #5fc054,
+  $can-toggle-inactive-text: rgba(white, 0.5),
+  $can-toggle-transition: cubic-bezier(0,1,0.5,1)
+) {
+
+  input[type="checkbox"] {
+
+    &[disabled] ~ label {
+      color: rgba($can-toggle-off-color, 0.5);
+    }
+
+    &:focus ~ label, &:hover ~ label {
+      .can-toggle__switch {
+        background-color: $can-toggle-off-color;
+        &:after {
+          color: darken($can-toggle-off-color, 10%);
+        }
+      }
+    }
+    &:hover ~ label {
+      color: darken($can-toggle-off-color, 5%);
+    }
+    &:checked {
+      ~ label {
+        &:hover {
+          color: darken($can-toggle-on-color, 3%);
+        }
+
+        .can-toggle__switch {
+          background-color: lighten($can-toggle-on-color, 5%);
+          &:after {
+            color: darken($can-toggle-on-color, 5%);
+          }
+        }
+      }
+
+      &:focus, &:hover {
+        ~ label {
+          .can-toggle__switch {
+            background-color: $can-toggle-on-color;
+            &:after {
+              color: darken($can-toggle-on-color, 10%);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  label {
+
+    .can-toggle__label-text {
+      flex: 1;
+    }
+
+    .can-toggle__switch {
+      transition: background-color 0.3s $can-toggle-transition;
+      background: lighten($can-toggle-off-color, 5%);
+      &:before {
+        color: $can-toggle-inactive-text;
+      }
+      &:after {
+        // Autoprefixer choked here, so making the prefixes explicit
+        -webkit-transition: -webkit-transform 0.3s $can-toggle-transition;
+        transition: transform 0.3s $can-toggle-transition;
+        color: $can-toggle-off-color;
+      }
+    }
+
+  }
+}
+
+@mixin can-toggle-appearance(
+  $can-toggle-width: 110px,
+  $can-toggle-height: 36px,
+  $can-toggle-border-radius: 4px,
+  $can-toggle-offset: 2px,
+  $can-toggle-label-font-size: 14px,
+  $can-toggle-switch-font-size: 11px,
+  $can-toggle-shadow: 0 3px 3px rgba(black, 0.4)
+) {
+  $can-toggle-switch-width: $can-toggle-width/2;
+
+  input[type="checkbox"] {
+
+    &:focus ~ label, &:hover ~ label {
+      .can-toggle__switch {
+        &:after {
+          box-shadow: $can-toggle-shadow;
+        }
+      }
+    }
+
+    &:checked {
+      ~ label {
+        .can-toggle__switch {
+          &:after {
+            transform: translate3d($can-toggle-width - ($can-toggle-switch-width + $can-toggle-offset), 0, 0);
+          }
+        }
+      }
+      &:focus, &:hover {
+        ~ label {
+          .can-toggle__switch {
+            &:after {
+              box-shadow: $can-toggle-shadow;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  label {
+    font-size: $can-toggle-label-font-size;
+
+    .can-toggle__switch {
+      height: $can-toggle-height;
+      flex: 0 0 $can-toggle-width;
+      width: $can-toggle-width;
+      border-radius: $can-toggle-border-radius;
+
+      &:before {
+        left: $can-toggle-width/2;
+        font-size: $can-toggle-switch-font-size;
+        line-height: $can-toggle-height;
+        width: $can-toggle-width/2;
+        padding: 0 12px;
+      }
+
+      &:after {
+        top: $can-toggle-offset;
+        left: $can-toggle-offset;
+        border-radius: $can-toggle-border-radius/2;
+        width: $can-toggle-switch-width - $can-toggle-offset;
+        line-height: $can-toggle-height - ($can-toggle-offset*2);
+        font-size: $can-toggle-switch-font-size;
+      }
+
+      &:hover {
+        &:after {
+          box-shadow: $can-toggle-shadow;
+        }
+      }
+    }
+  }
+}
+
+.can-toggle {
+  position: relative;
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
+  //overflow: hidden;
+
+  input[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    &[disabled] ~ label {
+      pointer-events: none;
+      .can-toggle__switch {
+        opacity: 0.4;
+      }
+    }
+
+    &:checked {
+      ~ label {
+
+        .can-toggle__switch {
+
+          &:before {
+            content: attr(data-unchecked);
+            left: 0;
+          }
+
+          &:after {
+            content: attr(data-checked);
+          }
+        }
+      }
+
+      &:focus, &:hover {
+        ~ label {
+        }
+      }
+    }
+  }
+
+  label {
+    user-select: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    .can-toggle__label-text {
+      flex: 1;
+      padding-left: 32px;
+    }
+
+    .can-toggle__switch {
+      position: relative;
+
+      &:before {
+        content: attr(data-checked);
+        position: absolute;
+        top: 0;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+      }
+
+      &:after {
+        content: attr(data-unchecked);
+        position: absolute;
+        z-index: 5;
+        text-transform: uppercase;
+        text-align: center;
+        background: white;
+        transform: translate3d(0, 0, 0);
+        font-family: 'Open Sans', sans-serif;
+      }
+
+    }
+
+  }
+
+  // Default values for .can-toggle class
+  @include can-toggle-branding;
+  @include can-toggle-appearance;
+
+  // Or re-brand the toggle for different applications
+  &.vat {
+    display: inline-block;
+    margin-top: 20px;
+    @include can-toggle-branding(
+                    #3d9c72, // Off state color
+                    #b53e74, // On state color
+                    rgba(white, 0.6), // Off state text color
+                    ease-in-out // Transition timing function
+    );
+  }
+
+}

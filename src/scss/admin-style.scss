@@ -1,0 +1,60 @@
+/* Add this code in style.css */
+.events-button {
+  width: 40%;
+  float: left;
+  display: inline-block;
+  margin: 3%;
+  border: 3px solid #be0017;
+  padding: 8px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.events-button + div {
+  width: 40%;
+  float: left;
+  display: inline-block;
+  margin: 3%;
+  border-radius: 10px;
+}
+
+.events-button + div > .events-button {
+  float: none;
+  width: auto;
+  display: block;
+  margin: 0;
+  border: 3px solid #be0017;
+  padding: 8px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.events-button .events-button-title {
+  font-weight: 700;
+  color: #1a171b;
+  margin-bottom: 17px;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.events-button .events-button-text {
+  color: #555;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  text-rendering: optimizeLegibility;
+  margin-bottom: 17px;
+  display: block;
+}
+
+.events-button .events-button-link {
+  text-align: center;
+  display: block;
+}
+
+.events-button .events-button-link a {
+  color: #c00009;
+  transition: all ease-in-out 0.3s;
+  text-decoration: none;
+  display: inline-block;
+}

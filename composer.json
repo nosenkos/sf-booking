@@ -1,0 +1,19 @@
+{
+    "name": "tn_academy/tn_academy-plugin",
+    "description": "Awesome starter plugin example",
+    "type": "project",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "tn_academy",
+            "email": "castellani.ale@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "dompdf/dompdf": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {"SnowfallBooking\\": "./inc"}
+    }
+}

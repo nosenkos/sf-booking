@@ -1,0 +1,13 @@
+<wpml-config>
+    <admin-texts>
+        <key name="sbp_mail">
+            <key name="*" />
+        </key>
+        <key name="sbp_btn">
+            <key name="front_calendar_info" />
+        </key>
+        <key name="sbp_addons">
+            <key name="*" />
+        </key>
+    </admin-texts>
+</wpml-config>

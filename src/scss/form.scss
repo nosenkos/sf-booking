@@ -1,0 +1,141 @@
+body {
+    background: #f1f1f1;
+}
+
+.front-end-booking_list-form {
+    h2 {
+        padding: 28.5px 20px;
+        color: #305a75;
+        font-family: "Open Sans", sans-serif;
+        font-size: 18px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 0;
+        border: 1px solid #98b7c6;
+        background-color: #b9ced9;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    form#booking_list-form {
+        padding: 20px;
+        border-bottom: 1px solid #98b7c6;
+        border-left: 1px solid #98b7c6;
+        border-right: 1px solid #98b7c6;
+        background-color: #b0c8d4;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+
+        select, input {
+            border: 1px solid #060505;
+            background-color: #ffffff;
+            color: #000000;
+            font-family: "Open Sans", sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 40px;
+            height: 50px;
+            border-radius: 0;
+            padding: 4px 11px;
+        }
+
+        input::placeholder, input::-webkit-input-placeholder, input::-moz-placeholder, input:-ms-input-placeholder, input:-moz-placeholder {
+            color: #808080;
+            font-family: "Open Sans", sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 16.8px;
+        }
+    }
+}
+
+#booking_list-form {
+    .field-container {
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    .field-msg {
+        display: none;
+        position: absolute;
+        bottom: -1Ωpx;
+        font-size: 9px;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+
+        &.show {
+            display: block;
+        }
+    }
+
+    .error {
+        color: rgb(144, 19, 19) !important;
+    }
+
+    .success {
+        color: rgb(47, 129, 47);
+    }
+}
+
+.sbp-registration {
+    color: #ffffff !important;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+    width: auto;
+    max-width: 300px;
+    display: inline-block;
+    text-align: center;
+    background-color: #226fa9;
+    border: none;
+    transition: background-color .25s ease-in-out;
+}
+
+.sbp-estimate-price {
+    color: #ffffff !important;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 60px;
+    text-transform: uppercase;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    background-color: #226fa9;
+    border: none;
+    transition: background-color .25s ease-in-out;
+    margin-bottom: 10px;
+}
+
+.sbp-estimate-cancel {
+    color: #ffffff !important;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 60px;
+    text-transform: uppercase;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    background-color: #dc3545;
+    border: none;
+    transition: background-color .25s ease-in-out;
+}
+
+.sbp-registration:hover, .sbp-estimate-price:hover {
+    background: #1d5e91;
+}
+
+.tn_hide {
+    display: none;
+}
+
+@media only screen and (max-width: 767px) {
+    .sbp-estimate-price {
+        font-size: 13px;
+    }
+}
